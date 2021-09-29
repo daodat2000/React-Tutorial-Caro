@@ -302,7 +302,7 @@ function calculateWinner(squares, sizeBoard) {
       }
       if (
         i >= 4 &&
-        j <= sizeBoard - 4 &&
+        j < sizeBoard - 4 &&
         squares[i * sizeBoard + j] &&
         squares[i * sizeBoard + j] === squares[(i - 1) * sizeBoard + j + 1] &&
         squares[i * sizeBoard + j] === squares[(i - 2) * sizeBoard + j + 2] &&
